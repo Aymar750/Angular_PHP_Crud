@@ -29,10 +29,10 @@ $conn = $database->dbConnection();
 $data = json_decode(file_get_contents("php://input"));
 
 
-//print_r($data);
+
 
 $hobbies = $data->hobbyField;
-//print_r($hobbies);
+
 $hobbies_list = '';
 foreach ($hobbies as $hobby) {
     $hobbies_list .= $hobby.',';

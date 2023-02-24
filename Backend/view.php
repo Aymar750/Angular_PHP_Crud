@@ -5,6 +5,7 @@ header("Access-Control-Allow-Methods: GET");
 header("Access-Control-Allow-Credentials: true");
 header("Content-Type: application/json; charset=UTF-8");
 error_reporting(E_ERROR);
+
 if ($_SERVER['REQUEST_METHOD'] !== 'GET') :
     http_response_code(405);
     echo json_encode([
