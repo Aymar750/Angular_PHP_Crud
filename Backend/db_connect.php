@@ -4,7 +4,7 @@ class Operations
     private $db_host = 'localhost';
     private $db_name = 'devooti';
     private $db_username = 'postgres';
-    private $db_password = 12136270;
+    private $db_password = 'mdp';
  
     public function dbConnection()
     { 
