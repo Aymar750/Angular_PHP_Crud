@@ -49,7 +49,7 @@ try {
     $fetch_stmt->bindValue(':id', $data->id, PDO::PARAM_INT);
     $fetch_stmt->execute();
 
-    if ($fetch_stmt->rowCount() > 0) :
+    if ($fetch_stmt->rowCount() > 0):
         
         $row = $fetch_stmt->fetch(PDO::FETCH_ASSOC);
         $first_name = isset($data->first_name) ? $data->first_name : $row['first_name'];
@@ -114,3 +114,4 @@ try {
     ]);
     exit;
 }
+//Yann
