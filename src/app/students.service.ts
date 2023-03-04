@@ -6,7 +6,7 @@ import { Students } from './students';
 })
 export class StudentsService {
   constructor( private http: HttpClient) { }
-  baseUrl: string = 'http://localhost:80/Backend/';
+  baseUrl: string = 'http://localhost:8080/Backend/';
 
   getStudents() {
     return this.http.get<Students[]>(this.baseUrl+'view.php');
